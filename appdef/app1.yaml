@@ -11,7 +11,7 @@ spec:
     name: kind
   project: default
   source:
-    path: general/helm-guestbook
+    path: appcode/app1
     repoURL: https://github.com/LTFC-TST/app-of-apps
     targetRevision: HEAD
   syncPolicy:
