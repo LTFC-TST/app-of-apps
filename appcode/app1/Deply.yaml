@@ -1,1 +1,21 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-ui-sourcecode-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: guestbook-ui-sourcecode-app
+  template:
+    metadata:
+      labels:
+        app: guestbook-ui-sourcecode-app
+        tst: v1
+    spec:
+      containers:
+      - image: omniregistry/front-end:dbd948a19593637618ce6e7d3b10ce7202a9d4d9
+        name: guestbook-ui-app
+        ports:
+        - containerPort: 80
