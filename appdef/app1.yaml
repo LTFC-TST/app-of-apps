@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: guestbook-app-of-app
-    name: kind
+    server: 'https://kubernetes.default.svc'
   project: default
   source:
     path: appcode/app1
