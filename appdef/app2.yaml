@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: guestbook-app-of-app-2
     server: 'https://kubernetes.default.svc'
-  project: default
+  project: my
   source:
     path: appcode/app2
     repoURL: https://github.com/LTFC-TST/app-of-apps
